@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>COOL SHIT</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            padding: 20px;
+            font-size: 48px;
+            background-color: #111;
+            margin: 0;
+            border-bottom: 2px solid #444;
+            letter-spacing: 2px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px; /* ungefär 1 cm mellanrum */
+            padding: 20px;
+        }
+
+        .gallery a img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .gallery a img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>COOL SHIT</h1>
+
+    <div class="gallery">
+        <a href="https://exempel1.com" target="_blank">
+            <img src="bilder/bild1.jpg" alt="Bild 1">
+        </a>
+        <a href="https://exempel2.com" target="_blank">
+            <img src="bilder/bild2.jpg" alt="Bild 2">
+        </a>
+        <a href="https://exempel3.com" target="_blank">
+            <img src="bilder/bild3.jpg" alt="Bild 3">
+        </a>
+        <!-- Lägg till fler bilder enligt samma mönster -->
+    </div>
+</body>
+</html>
